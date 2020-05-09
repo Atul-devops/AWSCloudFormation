@@ -10,7 +10,7 @@ pipeline
 				withAWS(credentials: 'awsrootaccesskey') {
 						// some block
 						
-						aws cloudformation create-stack --stack-name CloudFormationEC2instance --template-body  file:///https://github.com/gnande/AWSCloudFormation/blob/master/EC2CloudFormation.json
+						aws cloudformation create-stack --stack-name CloudFormationEC2instance --template-body  file:///github.com/gnande/AWSCloudFormation/blob/master/EC2CloudFormation.json
 						
 					}
 
