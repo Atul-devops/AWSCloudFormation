@@ -1,3 +1,20 @@
-withAWS(credentials: 'awsrootaccesskey') {
-    // some block
+pipeline
+{
+	agent any
+	stages
+	{
+		stage ('My first cloud formation template to launch ec2 instance.')
+		{
+			steps
+			{
+				withAWS(credentials: 'awsrootaccesskey') {
+						// some block
+						
+						aws cloudformation create-stack --stack-name CloudFormationEC2instance --template-body https://github.com/gnande/AWSCloudFormation/blob/master/EC2CloudFormation.json
+						
+					}
+
+			}
+		}
+	}
 }
