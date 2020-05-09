@@ -8,9 +8,8 @@ pipeline
 			steps
 			{
 				withAWS(credentials: 'awsrootaccesskey') {
-				aws cloudformation create-stack --stack-name CloudFormationEC2instance --template-body  file:///Jenkinsfile-CloudFormationTemplate.json
+				aws cloudformation create-stack --stack-name CloudFormationEC2instance --template-body file:///Jenkinsfile-CloudFormationTemplate.json
 				}
-
 			}
 		}
 	}
