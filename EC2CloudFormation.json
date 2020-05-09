@@ -21,7 +21,7 @@
 	"MyCloudFormationEC2Instance": {
       "Type": "AWS::EC2::Instance",
       "Properties": {
-        "AvailabilityZone": "us-east-2",        
+        "AvailabilityZone": "US East (Ohio)",        
         "ImageId": "ami-0f7919c33c90f5b58",
         "InstanceType": "t2.micro",
         "KeyName": "key-for-cloudformation-demo"        
