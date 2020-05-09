@@ -1,0 +1,3 @@
+withAWS(credentials: 'awsrootaccesskey') {
+    // some block
+}
